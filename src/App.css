@@ -1,0 +1,57 @@
+body{
+  background-image: linear-gradient(to right, rgb(228, 59, 59) , rgb(218, 186, 9));
+}
+
+.cord{
+  width: 350px;
+  height: 250px;
+margin-top: 100px;
+margin-left: 450px;
+text-align: center;
+border: 2px solid;
+border-radius: 40px;
+box-shadow: 5px;
+background-color: rgb(220, 220, 241);
+}
+.email{
+  margin-right: 5px;
+
+}
+.forgot{
+  margin-right: 5px;
+
+}
+.name{
+  margin-right: 5px;
+
+}
+.pass{
+  margin-right: 5px;
+  }
+  span{
+    border-bottom: 1px solid;
+  }
+
+  .cord1{
+    width: 350px;
+    height: 150px;
+  margin-top: 100px;
+  margin-left: 450px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 40px;
+  box-shadow: 5px;
+  background-color: rgb(223, 191, 208);
+  }
+  
+  .cord2{
+    width: 350px;
+    height: 250px;
+  margin-top: 100px;
+  margin-left: 450px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 40px;
+  box-shadow: 5px;
+  background-color: cornsilk;
+  }
