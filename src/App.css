@@ -4,49 +4,55 @@ body{
 
 .cord{
   width: 350px;
-  height: 250px;
+  height: 370px;
 margin-top: 100px;
 margin-left: 450px;
 text-align: center;
 border: 2px solid;
 border-radius: 40px;
 box-shadow: 5px;
-background-color: rgb(220, 220, 241);
+background-color: rgb(231, 225, 223);
+align-items: center;
+justify-content: center;
+display: flex;
+
 }
 .email{
-  margin-right: 5px;
-
-}
-.forgot{
-  margin-right: 5px;
-
+  background-color: rgb(201, 235, 109);
+  padding: 5px;
+  margin-left: 23px;
 }
 .name{
-  margin-right: 5px;
-
+ padding: 5px;
+ background-color: rgb(201, 235, 109);
+margin-left: 25px;
 }
-.pass{
-  margin-right: 5px;
+.password{
+  margin-right: 10px;
+  background-color: rgb(201, 235, 109);
+  padding: 5px;
   }
   span{
     border-bottom: 1px solid;
   }
 
   .cord1{
-    width: 350px;
-    height: 150px;
-  margin-top: 100px;
-  margin-left: 450px;
+    width: 300px;
+    height: 100px;
+  margin-top: 200px;
+  margin-left: 500px;
   text-align: center;
   border: 2px solid;
   border-radius: 40px;
   box-shadow: 5px;
-  background-color: rgb(223, 191, 208);
+  background-color: rgb(201, 236, 169);
+  align-items: center;
+  padding: 20px;
   }
   
   .cord2{
-    width: 350px;
-    height: 250px;
+    width: 450px;
+    height: 350px;
   margin-top: 100px;
   margin-left: 450px;
   text-align: center;
@@ -54,4 +60,33 @@ background-color: rgb(220, 220, 241);
   border-radius: 40px;
   box-shadow: 5px;
   background-color: cornsilk;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+
+  }
+  
+  .btn{
+   padding: 5px;
+    width: 50%;
+    background-color: rgb(105, 85, 218);
+    border-radius: 10px;
+    color:aliceblue;
+    font-size: large;
+    
+  }
+  .home{
+    background-color: rgb(209, 212, 16);
+    color: rgb(8, 59, 170);
+    display: flex;
+    justify-content: center;
+   margin-top: 100px;
+   width: 300px;
+   height: 300px;
+   margin-left: 500px;
+   border: solid;
+   border-radius: 50px;
+   align-items:center;
+  
   }

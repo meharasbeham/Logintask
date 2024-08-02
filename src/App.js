@@ -3,22 +3,25 @@ import { Routes,Route,Link } from "react-router-dom";
 import "./App.css";
 import login from "./pages/login";
 import forgot from "./pages/forgot";
-import create from "./pages/create";
-
+import Sigin from "./pages/sigin";
+import home from "./pages/home";
 
 function APP(){
+  
   return(
   <div className="APP">
     
         <div>
-      <Link to={"/"}></Link>
+      <Link to={"/login"}></Link>
       <Link to={"/forgot"}></Link>
-      <Link to={"/create"}></Link>
+      <Link to={"/"}></Link>
+      <Link to={"/home"}></Link>
     </div>
     <Routes>
-      <Route path="/" Component={login}/>
-      <Route path="/forgot"Component={forgot}/>
-      <Route path="/create" Component={create}/>
+    <Route path="/" Component={Sigin}/>
+      <Route path="/login" Component={login}/>
+      <Route path="/forgot" Component={forgot}/>
+      <Route path="/home" Component={home}/>
     </Routes>
 
 

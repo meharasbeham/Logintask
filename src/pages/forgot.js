@@ -1,19 +1,36 @@
-import React from 'react'
-// import axios from 'axios'
-import {Link} from 'react-router-dom'
-export default function login() {
+import React ,{useState} from 'react'
+import axios from 'axios'
+
+
+
+export default function Forgot() {
+  const [email,setEmail]=useState()
+  const create= (e)=>{
+     
+    const data={
+    "Email":email,
+ 
+  }
+  
+  axios.get("http://localhost:4000/api/User/forgot",data)
+  .then((response)=>response.jon())
+  .then((response)=>console.log(response))
+  .catch((error)=>console.log(error));
+  }
+  
   return (
     <div className='cord1'>
-      <span>Forgot password</span>
-<p>
-  <label type='email' className='forgot'>Email:</label>
-  <input type='email' required placeholder='enter your email' size={25}></input>
-</p>
-{/* <p><button onClick={async()=>{
-  const data=axios.post("http://localhost:4000/User/Create" ,{Email:""})
-}}>Submit</button></p> */}
+<form onClick={create}>
 
-<Link to={"/"}>Submit</Link>
+<p>
+  <label type='email' >Email:</label>
+  <input type='email' className='email' size={25}value={email}required onChange={(e)=>setEmail(e.target.value)}></input>
+</p>
+
+<p>
+<button type="submit" class="btn">Send Email</button>
+</p>
+</form>
 
     </div>
   )
